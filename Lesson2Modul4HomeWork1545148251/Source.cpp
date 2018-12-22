@@ -100,8 +100,19 @@ void Task5()
 {
 	SetConsoleTextAttribute(hConsole, 10);
 	printf("\n--------------------------------------------------------------------------\n\nTask5\n\n");
-	printf("\nВ разработке.... \n\n");
 	SetConsoleTextAttribute(hConsole, 7);
+
+	int a = 11, b, count = 0;
+
+	for (a; a <= 99; a++)
+	{
+		if (a % 11 == 0)
+		{
+			count++;
+			b = pow(a, 2);
+			printf(" %d	-	%d^2 = %d \n", count, a, b);
+		}
+	}
 }
 
 
